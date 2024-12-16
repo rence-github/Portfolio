@@ -1,0 +1,256 @@
+:root {
+  --text-color: white;
+  --link-color: blue;
+  --background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 80px
+}
+
+nav .left a {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav .right a {
+  color: var(--text-color);
+  margin: 0 10px;
+}
+
+/* Section 1 about me */
+.Myself-Section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50 0px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  gap: 40px; 
+}
+
+.Myself-Section .text .Links {
+  margin-top: 25px;
+}
+
+.Myself-Section .text h2 {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.Myself-Section .text .Links a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid var(--link-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: .1s;
+}
+
+.Myself-Section .text .Links a {
+  color: var(--text-color);
+  border: 2px solid var(--text-color)
+}
+
+.Myself-Section .text p{
+  text-indent: 8px;
+}
+
+.Myself-Section .text {
+  color: white;
+  flex: 5px;
+}
+
+.Myself-Section .Pic {
+  display: flex;
+  justify-content: right;
+  flex: 5px;
+}
+
+.Myself-Section .Pic img {
+  width: 325px;
+  border-radius: 50%;
+}
+
+/*Section 2 Gallery*/
+.Gallery-Section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.Gallery-Section h2{
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.Gallery-Section .cells {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.Gallery-Section .cells .cell {
+  display:  flex;
+  justify-content: center;
+  
+  
+  max-width: 200px;
+  padding: 10px 20px;
+  border: 1.5px solid black;
+}
+
+/*Section 3 Family*/
+ .Family-Section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+ .Family-Section h2 {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+ .Family-Section .group {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+ .Family-Section .group .family-details {
+  text-align: center;
+  flex: 2;
+  
+}
+ .Family-Section .group .family-details img{
+  width: 400px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.Family-Section .group .family-details p{
+  font-weight: 600;
+}
+.Family-Section .group .text {
+  flex: 8;
+  
+}
+
+/* Section 4 Experience */
+.Experience-Section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.Experience-Section h2 {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.Experience-Section p {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.8;
+  max-width: 800px;
+}
+
+
+@media (max-width: 850px;) {
+  /* Myself */
+  .Myself-Section .text h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 740px;) {
+  /* Myself */
+  .Myself-Section .text {
+    flex-direction: column-reverse;
+  }
+  
+  .Myself-Section .Pic {
+    width: 300px;
+  }
+  
+  /*Section 3 Family*/
+ .Family-Section {
+   text-align: center;
+ }
+  
+  .Family-Section .group{
+    flex-direction: column;
+    
+  }
+}
+
+@media (max-width: 600px;) {
+  /* Navbar */
+  nav{
+    padding: 0 20px;
+  }
+  
+  nav .right a {
+   font-size: 22px; 
+  }
+  
+  nav .right a span {
+    display: none
+  }
+  
+  /* about me */
+  .Myself-Section {
+    padding: 0 20px;
+  }
+  
+  .Myself-Section .text h2{
+    font-size: 30px;
+    
+  }
+  
+  /*Section 2 Gallery*/
+  .Gallery-Section {
+  padding: 0 20px;
+  }
+  
+}
